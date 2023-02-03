@@ -1,0 +1,17 @@
+.mobile-only {
+    display:none;
+}
+
+.desktop-only {
+    display: flex;
+}
+
+@media screen and (max-width:$mobile-cutoff) {
+    .mobile-only {
+        display: flex;
+    }
+
+    .desktop-only {
+        display:none;
+    }
+}

@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: color 500ms ease;
+    transition: background-color 500ms ease;
+    overflow-x: hidden !important;
+}
+
+html {
+    scroll-padding-top: 100px;
+    scroll-margin-top: 100px;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+
+.theme {
+    &--dark {
+        color: $color-secondary-dark;
+        background-color: $color-primary-dark;
+    }
+
+    &--light {
+        color: $color-primary-dark;
+        // background-color: $color-secondary-dark;
+    }
+}

@@ -1,0 +1,18 @@
+.main__content {
+    padding-top: 20px;
+    transition: all 500ms ease;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    opacity: 1;
+
+    @media (max-width: $mobile-cutoff) {
+        padding-top: 20px;
+    }
+    
+    &--hidden {
+        @extend .main__content;
+        top: 20px;
+        opacity: 0;
+    }
+}

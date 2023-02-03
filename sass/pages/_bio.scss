@@ -1,0 +1,9 @@
+.bio { 
+    max-width: 1060px;
+    width: calc(100vw - 100px);
+    min-width: 200px;
+
+    @media (max-width: $mobile-cutoff) {
+        width: 80%;
+    }
+}

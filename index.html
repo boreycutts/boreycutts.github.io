@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Artist Yung No Official Website</title>
+    <meta name="description" content="Hey, fuck you man! Who put this thing together? Me!">
+    <meta name="author" content="borey 👹">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <script src="js/index.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/473b691f5a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="theme--dark" style="overflow-x: hidden;">
+    <x-header></x-header>
+    <div id="content" class="main__content flex-set flex--column flex--align-items-center">
+        <div class="video-container flex-set flex--column flex--align-items-center flex--content-center">
+            <video autoplay loop muted playsinline class="back-video">
+                <source src="images/movie.mp4">
+            </video>
+        </div>
+        <div id="home" class="container"></div>
+        <div id="bio" style="scroll-padding-top: -2px; scroll-margin-top: -2px;">
+            <x-photos></x-photos>
+        </div>
+        <div id="work" style="padding-bottom: 20px; scroll-padding-top: -10px; scroll-margin-top: -10px;">
+            <x-albums></x-albums>
+        </div>
+        <div id="contact" style="scroll-padding-top: -100px; scroll-margin-top: -100px;">
+            <x-contact></x-contact>
+        </div>
+    </div>
+</body>
+</html>
